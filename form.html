@@ -1,0 +1,72 @@
+<div>
+	<h3>Chaplain Details</h3>
+    <form action="" method="post" accept-charset="utf-8">
+		<input type="text" name="first_name" value="First Name">
+        <input type="text" name="last_name" value="Last Name">
+        <input type="text" name="mid_initial" value="MI" size="5"> <br>
+		
+        <!-- USER SELECTS STATE -->
+        <select name="state"> 
+        	<option>State</option> 
+            <option value="virginia">Virginia</option>
+            <option value="north_carolina">North Carolina</option>
+            <option value="georgia">Georgia</option>
+        </select> <br>
+        
+        <!-- USER SELECTS DENOMINATION -->
+        <select name="denomination">
+        	<option>Denomination</option>
+            <option value="catholic">Catholic</option>
+            <option value="jewish">Jewish</option>
+            <option value="protestant">Protestant</option>
+        </select> <br> 
+        
+        <!-- CHAPLAIN'S MAJOR DATES, CIRCA IS USED FOR DATES THAT USER IS UNSURE OF -->  
+        <label for="date_birth">Date of Birth: </label><input type="date" name="date_birth"> 
+        	<input type="checkbox" name="circa" value="birth_circa"> <label for="birth_circa">Circa</label><br>
+        <label for="date_death">Date of Death: </label><input type="date" name="date_death">
+        	<input type="checkbox" name="circa" value="death_circa"> <label for="birth_circa">Circa</label><br> 
+        
+        <!-- CHAPLAIN'S GRAVE LOCATION -->
+        <label for="grave_location">Grave Location: </label><br>
+        <textarea name="grave_location" rows="1" cols="60"></textarea><br>
+		
+        <!-- NOTES ON THE CHAPLAIN -->
+        <label for="notes">Notes: </label><br>
+        <textarea name="notes" rows="12" cols="60"></textarea><br>
+        
+        <!-- MAJOR EVENTS THE CHAPLAIN PARTICIPATED IN -->
+        <h3>Timeline</h3>
+        <ul>
+        	<li><strong>1863 - Battle of Gettysburg</strong></li>
+            <li><strong>1866 - Signing of Treaty</strong></li>
+        </ul><br>
+        <a href="add_event.html" target="_self"><input type="button" name="add_event" value="Add Event" class="btnRight"></a><br>
+        
+        <!-- UNITS THE CHAPLAIN WAS ASSOCIATED WITH -->
+        <h3>Unit</h3>
+        <ul>
+        	<li><strong>1st Militia of Alabama</strong></li>
+        </ul><br>
+        <a href="add_unit.html" target="_self"><input type="button" name="add_unit" value="Add Unit" class="btnRight"></a><br> <!-- LINK TO ADD AND EDIT UNITS -->
+        
+        <!-- EXIBITS WHERE THE CHAPLAIN'S ARTIFACTS ARE DISPLAYED -->
+        <h3>Exhibits</h3>
+        <ul>
+        	<li><strong>Name of Exhibit</strong><br>Chatanooga, TN</li>
+        </ul><br>
+        <a href="add_exhibit.html" target="_self"><input type="button" name="add_exhibit" value="Add Exhibit" class="btnRight"></a><br> <!-- LINK TO ADD AND EDIT EXHIBITS -->
+        
+        <!-- PICTURES, LETTERS, AND STORIES ASSOCIATED WITH THE CHAPLAIN. LINKS TO THE DATA LISTED BELOW. -->
+        <h3>Information</h3>
+        <ul>
+        	<li class="info_picture"><a href="#" target="_self"><strong>Photo of Chaplain</strong></a></li>
+            <li class="info_letter"><a href="#" target="_self"><strong>Letter to Wife</strong></a></li>
+            <li class="info_story"><a href="#" target="_self"><strong>Story: Falling off the horse</strong></a></li>
+        </ul><br>
+        <a href="add_info.html" target="_self"><input type="button" name="add_info" value="Add Information" class="btnRight"></a><br> <!-- ADD A PIECE OF INFORMATION -->
+        
+        <!-- SAVES AND SUBMITS INFORMATION TO DATABASE. CANCEL IS IN THE FORM OF A LINK FOR VISUAL HIERARCHY -->
+        <input type="submit" value="Save"> <a href="#" target="_self">Cancel</a>
+	</form>
+</div>
